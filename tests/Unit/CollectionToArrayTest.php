@@ -22,7 +22,7 @@ class CollectionToArrayTest extends TestCase
         $this->assertInstanceOf(Arrayable::class, $users[0]);
 
         // Failed asserting that App\User Object is of type "array"
-        // $this->assertIsArray($users->toArray()[0]);
+        $this->assertIsArray($users->toArray()[0]);
 
         // passed
         $this->assertIsArray($users->toArray()[0]->toArray());
